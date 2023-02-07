@@ -1,0 +1,108 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  border-bottom: solid black 2px;
+  background-color: beige;
+  z-index: 10;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  margin: 70px 0px 70px 0px;
+}
+
+.photo_me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#my_photo {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.photo_me > * {
+  padding: 30px;
+}
+
+.description {
+  margin: 0px 60px;
+}
+
+.count {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 60px;
+}
+
+.count > box {
+  margin: 0px;
+  padding: 5px 20px;
+  border: 2px black solid;
+  border-radius: 8px;
+}
+
+.settings {
+  margin: 60px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.settings > p {
+  font-size: 20px;
+}
+
+.settings > button {
+  height: 30px;
+}
+
+.settings > h2 {
+  position: absolute;
+  padding: 0px 0;
+  top: -50px;
+  left: 0px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: beige;
+  width: 100%;
+  margin: 0px;
+  border-top: solid black 2px;
+}
+
+footer > ul {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+footer > ul > li {
+  list-style: none;
+  font-size: 1.5em;
+  padding: 10px 30px;
+  margin: 0px;
+  width: 30px;
+}
+
+a:link {
+  text-decoration: none;
+}
