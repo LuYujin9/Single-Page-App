@@ -1,0 +1,106 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  border-bottom: solid black 2px;
+  background-color: beige;
+  z-index: 10;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  margin: 0px 0px 200px 0px;
+}
+
+section {
+  border: 2px solid;
+  margin: 50px auto;
+  text-align: center;
+  width: 300px;
+  position: relative;
+  top: 100px;
+}
+
+h2 {
+  padding: 20px;
+}
+
+#show_answer1 {
+  display: none;
+  padding: 5px 30px;
+}
+
+#show_anser1:target {
+  display: block;
+  background-color: orange;
+}
+
+#hide_answer1:target {
+  display: none;
+}
+
+.bookmark_button {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: beige;
+  font-size: 1.5em;
+  position: absolute;
+  top: -20px;
+  right: 30px;
+}
+
+.categories {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.categories > p {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 3px 10px;
+  background-color: bisque;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: beige;
+  width: 100%;
+  margin: 0px;
+  border-top: solid black 2px;
+}
+
+footer > ul {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+footer > ul > li {
+  list-style: none;
+  font-size: 1.5em;
+  padding: 10px 30px;
+  margin: 30px;
+  width: 30px;
+}
+
+a:link {
+  text-decoration: none;
+}
