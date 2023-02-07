@@ -1,0 +1,13 @@
+:root {
+  --first-color: #a64800;
+  --second-color: #ff6f00;
+  --third-color: #bf6230;
+  --fourth-color: #ff9340;
+  --fifth-color: #ffb073;
+}
+
+:root {
+  --title: Sans-serif;
+  --inhalt: serif;
+  --tag: Monospace;
+}
