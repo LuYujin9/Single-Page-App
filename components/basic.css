@@ -4,14 +4,15 @@ header {
   width: 100%;
   position: fixed;
   top: 0px;
-  border-bottom: solid black 2px;
-  background-color: var(--fifth-color);
+  border-bottom: solid rgb(245, 241, 241) 5px;
+  background-color: var(--third-color);
   z-index: 10;
 }
 
 h1 {
   text-align: center;
   font-family: var(--title);
+  color:var(--first-color);
 }
 
 main {
@@ -25,10 +26,10 @@ h2 {
 footer {
   position: fixed;
   bottom: 0px;
-  background-color: var(--fifth-color);
+  background-color: var(--third-color);
   width: 100%;
   margin: 0px;
-  border-top: solid black 2px;
+  border-top: solid rgb(245, 241, 241) 5px;
 }
 
 footer > ul {
