@@ -1,0 +1,12 @@
+@import "/global.css";
+@import "/components/card.css";
+@import "/components/basic.css";
+
+body {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--fifth-color);
+}

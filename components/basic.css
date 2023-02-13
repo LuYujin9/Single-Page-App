@@ -1,0 +1,51 @@
+@import "/css/global.css";
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  border-bottom: solid rgb(245, 241, 241) 5px;
+  background-color: var(--third-color);
+  z-index: 10;
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--title);
+  color:var(--first-color);
+}
+
+main {
+  margin: 0px 0px 200px 0px;
+}
+
+h2 {
+  padding: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: var(--third-color);
+  width: 100%;
+  margin: 0px;
+  border-top: solid rgb(245, 241, 241) 5px;
+}
+
+footer > ul {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+footer li {
+  list-style: none;
+  font-size: 1.5em;
+  padding: 10px 30px;
+  width: 30px;
+}
+
+a:link {
+  text-decoration: none;
+}
