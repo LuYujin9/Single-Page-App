@@ -1,4 +1,4 @@
-@import "/css/global.css";
+@import "/global.css";
 
 header {
   width: 100%;
@@ -12,7 +12,7 @@ header {
 h1 {
   text-align: center;
   font-family: var(--title);
-  color:var(--first-color);
+  color: var(--first-color);
 }
 
 main {
