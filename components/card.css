@@ -1,4 +1,4 @@
-@import "/css/global.css";
+@import "/global.css";
 
 .card {
   margin: 50px auto;
@@ -28,7 +28,7 @@
   height: 30px;
   border-radius: 8px;
   border: none;
-  box-shadow:5px 5px 5px var(--fifth-color);
+  box-shadow: 5px 5px 5px var(--fifth-color);
   padding: 0px 20px;
   background-color: var(--fourth-color);
 }
