@@ -10,3 +10,11 @@ body {
   justify-content: center;
   background-color: var(--fifth-color);
 }
+
+.answer--visible {
+  display: none;
+}
+
+.card__bookmark--color {
+  background-color: var(--third-color);
+}

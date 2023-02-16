@@ -17,7 +17,7 @@
   padding: 0;
   border-radius: 50%;
   border: none;
-  background-color: var(--third-color);
+  background-color: var(--second-color);
   font-size: 1.5em;
   position: absolute;
   top: -20px;
@@ -28,13 +28,9 @@
   height: 30px;
   border-radius: 8px;
   border: none;
-  box-shadow: 5px 5px 5px var(--fifth-color);
+  box-shadow: 0.5em 0.5em 0.5em var(--fifth-color);
   padding: 0px 20px;
   background-color: var(--fourth-color);
-}
-
-.card p {
-  display: none;
 }
 
 .card__categories {

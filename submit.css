@@ -1,0 +1,14 @@
+@import "/global.css";
+@import "/components/basic.css";
+
+body {
+  padding: 0px;
+  margin: 100px 0px;
+  background-color: var(--first-color);
+}
+
+fieldset {
+  weidth: 300px;
+  display: block;
+  justify-content: center;
+}
