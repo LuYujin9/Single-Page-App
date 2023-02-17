@@ -12,6 +12,7 @@ console.clear();
 function leftCharacters(inputLength) {
   const leftCharacters = 150 - event.target.value.length;
   inputLength.textContent = `${leftCharacters} characters left`;
+  inputLength.classList.remove("invisible");
 }
 
 questionInput.addEventListener("input", (event) => {
@@ -44,4 +45,6 @@ form.addEventListener("submit", (event) => {
 
   event.target.reset();
   event.target.elements.question.focus();
+  questionInputLength.classList.add("invisible");
+  answerInputLength.classList.add("invisible");
 });
