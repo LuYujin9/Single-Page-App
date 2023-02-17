@@ -24,6 +24,13 @@ fieldset {
   display: block;
   justify-content: center;
   margin: auto;
+  background-color: var(--fifth-color);
+}
+
+fieldset > legend {
+  border-radius: 5px;
+  background-color: var(--fourth-color);
+  font-size: 1.5em;
 }
 
 fieldset > p {
@@ -33,11 +40,14 @@ fieldset > p {
 button {
   width: 100px;
   height: 30px;
-  margin: auto;
+  margin: 10px auto;
+  background-color: var(--fifth-color);
+  border-radius: 10px;
 }
 
 .card {
   margin: 50px auto;
+  padding: 10px 20px;
   text-align: center;
   width: 300px;
   height: 50px;

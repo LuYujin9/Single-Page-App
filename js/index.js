@@ -14,18 +14,18 @@ const bookmarkButton3 = document.querySelector('[data-js="button-3"]');
 const bookmarkCard3 = document.querySelector('[data-js="card3"]');
 
 //show answer button
-// button.textContent === "Show Answer" 需要点击2次才生效？
-function showAnswerButton(button, answer) {
-  if (answer.classList.contains("answer--visible")) {
-    button.textContent = "Hide Answer";
+// button.textContent === "Show Answer" 需要点击2次才生效？answer.classList.contains("answer--visible")
+function showAnswerButton(button) {
+  if (button.innerHTML === "Show Answer") {
+    button.innerHTML = "Hide Answer";
   } else {
     button.textContent = "Show Answer";
   }
-  answer.classList.toggle("answer--visible");
 }
 
 showAnswerButton1.addEventListener("click", () => {
   showAnswerButton(showAnswerButton1, answer1);
+  answer1.classList.toggle("answer--visible");
 });
 
 showAnswerButton2.addEventListener("click", () => {
