@@ -12,7 +12,7 @@ body {
 }
 
 .answer--visible {
-  display: none;
+  visibility: hidden;
 }
 
 .card__bookmark--color {

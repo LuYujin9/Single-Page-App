@@ -12,5 +12,5 @@ body {
 }
 
 .card {
-  display: none;
+  visibility: hidden;
 }

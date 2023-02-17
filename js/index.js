@@ -13,9 +13,8 @@ const bookmarkCard2 = document.querySelector('[data-js="card2"]');
 const bookmarkButton3 = document.querySelector('[data-js="button-3"]');
 const bookmarkCard3 = document.querySelector('[data-js="card3"]');
 
-//show answer button.
+//show answer button
 // button.textContent === "Show Answer" 需要点击2次才生效？
-// answer.classList.contains("visible")
 function showAnswerButton(button, answer) {
   if (answer.classList.contains("answer--visible")) {
     button.textContent = "Hide Answer";

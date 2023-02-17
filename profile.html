@@ -11,10 +11,12 @@
     <header>
       <h1 aria-labelledby="quiz app">Quiz App</h1>
     </header>
+
     <main>
       <article class="block__profile">
         <img src="/imges/01.png" atl="photo from me" />
         <p>lenealgu dleia</p>
+
       </article>
       <article class="text__about-me">
         <h2>About Me</h2>
@@ -24,17 +26,22 @@
           sint ipsam neque earum labore voluptatum quam corrupti numquam sed
           nulla accusamus?
         </p>
-        <div class="box__count">
+        <section class="box__count">
           <box>⁉️ 13</box>
           <box>📁12</box>
-        </div>
+        </section>
       </article>
+
       <article>
         <h2>Setting</h2>
-        <div class="block__setting">
+        <section class="block__setting">
           <p>Dark Mode</p>
-          <button type="button" aria-label="switch">dark</button>
-        </div>
+          <form>
+            <label for="switch">on</label>
+            <input type="checkbox" aria-label="switch" id="switch">
+          </form>
+          
+        </section>
       </article>
     </main>
 
