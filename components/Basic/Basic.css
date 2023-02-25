@@ -1,11 +1,17 @@
 @import "/global.css";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 header {
   width: 100%;
   position: fixed;
   top: 0px;
   border-bottom: solid rgb(245, 241, 241) 5px;
-  background-color: var(--third-color);
+  background-color: var(--second-color);
   z-index: 10;
 }
 
@@ -26,7 +32,7 @@ h2 {
 footer {
   position: fixed;
   bottom: 0px;
-  background-color: var(--third-color);
+  background-color: var(--second-color);
   width: 100%;
   margin: 0px;
   border-top: solid rgb(245, 241, 241) 5px;

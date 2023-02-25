@@ -1,18 +1,14 @@
 @import "/global.css";
-@import "/components/basic.css";
-* {
-}
+@import "/components/Basic/Basic.css";
+@import "/components/Card/Card.css";
 
 body {
-  padding: 0px;
   margin: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 main {
-  margin: 100px 50px;
+  margin: 100px auto;
+  width: 500px;
 }
 
 img {
@@ -27,9 +23,6 @@ img {
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
-}
-
-.text__about-me {
 }
 
 .box__count {

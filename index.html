@@ -16,7 +16,9 @@
     <main>
       <article class="card">
         <h2>What property filps the axes in flexbox?</h2>
-        <button class="card__bookmark" aria-label="bookmark">📁</button>
+        <button class="card__bookmark" aria-label="bookmark" data-js="button-1">
+          📁
+        </button>
         <button
           type="button"
           class="card__button"
@@ -25,7 +27,7 @@
         >
           Show Answer
         </button>
-        <p data-js="answer1">flex-direction</p>
+        <p class="answer--visible" data-js="answer1">flex-direction</p>
         <ul class="card__categories">
           <li>#html</li>
           <li>#flexbox</li>
@@ -35,7 +37,13 @@
 
       <article class="card">
         <h2>What property filps the axes in flexbox?</h2>
-        <button class="card__bookmark" aria-label="bookmark">📁</button>
+        <button
+          class="card__bookmark card__bookmark--visible"
+          aria-label="bookmark"
+          data-js="button-2"
+        >
+          📁
+        </button>
         <button
           type="button"
           class="card__button"
@@ -44,7 +52,7 @@
         >
           Show Answer
         </button>
-        <p data-js="answer2">flex-direction</p>
+        <p class="answer--visible" data-js="answer2">flex-direction</p>
         <ul class="card__categories">
           <li>#html</li>
           <li>#flexbox</li>
@@ -54,7 +62,9 @@
 
       <article class="card">
         <h2>What property filps the axes in flexbox?</h2>
-        <button class="card__bookmark" aria-label="bookmark">📁</button>
+        <button class="card__bookmark" aria-label="bookmark" data-js="button-3">
+          📁
+        </button>
         <button
           class="card__button"
           aria-label="show answer button"
@@ -62,7 +72,7 @@
         >
           Show Answer
         </button>
-        <p data-js="answer3">flex-direction</p>
+        <p class="answer--visible" data-js="answer3">flex-direction</p>
         <ul class="card__categories">
           <li>#html</li>
           <li>#flexbox</li>
@@ -78,6 +88,9 @@
         </li>
         <li>
           <a href="/bookmarks.html" aria-label="bookmark">📁</a>
+        </li>
+        <li>
+          <a href="/submit.html" aria-label="bookmark">➕</a>
         </li>
         <li>
           <a href="/profile.html" aria-label="profile">👩🏻‍💼</a>

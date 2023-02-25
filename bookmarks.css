@@ -1,6 +1,6 @@
 @import "/global.css";
-@import "/components/card.css";
-@import "/components/basic.css";
+@import "/components/Basic/Basic.css";
+@import "/components/Card/Card.css";
 
 body {
   padding: 0px;
@@ -12,5 +12,5 @@ body {
 }
 
 .card {
-  display: none;
+  visibility: hidden;
 }

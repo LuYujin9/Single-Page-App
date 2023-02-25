@@ -1,6 +1,6 @@
 @import "/global.css";
-@import "/components/card.css";
-@import "/components/basic.css";
+@import "/components/Card/Card.css";
+@import "/components/Basic/Basic.css";
 
 body {
   padding: 0px;
@@ -9,4 +9,12 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: var(--fifth-color);
+}
+
+.answer--visible {
+  visibility: hidden;
+}
+
+.card__bookmark--color {
+  background-color: var(--third-color);
 }

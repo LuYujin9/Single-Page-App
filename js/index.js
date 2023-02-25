@@ -6,33 +6,43 @@ const showAnswerButton2 = document.querySelector('[data-js="show-answer2"]');
 const answer2 = document.querySelector('[data-js="answer2"]');
 const showAnswerButton3 = document.querySelector('[data-js="show-answer3"]');
 const answer3 = document.querySelector('[data-js="answer3"]');
+const bookmarkButton1 = document.querySelector('[data-js="button-1"]');
+const bookmarkCard1 = document.querySelector('[data-js="card1"]');
+const bookmarkButton2 = document.querySelector('[data-js="button-2"]');
+const bookmarkCard2 = document.querySelector('[data-js="card2"]');
+const bookmarkButton3 = document.querySelector('[data-js="button-3"]');
+const bookmarkCard3 = document.querySelector('[data-js="card3"]');
+
+//show answer button
+// button.textContent === "Show Answer" 需要点击2次才生效？answer.classList.contains("answer--visible")
+function showAnswerButton(button) {
+  if (button.innerHTML === "Show Answer") {
+    button.innerHTML = "Hide Answer";
+  } else {
+    button.textContent = "Show Answer";
+  }
+}
 
 showAnswerButton1.addEventListener("click", () => {
-  if (showAnswerButton1.textContent == "Show Answer") {
-    showAnswerButton1.textContent = "Hide Answer";
-    answer1.style.display = "block";
-  } else {
-    showAnswerButton1.textContent = "Show Answer";
-    answer1.style.display = "none";
-  }
+  showAnswerButton(showAnswerButton1, answer1);
+  answer1.classList.toggle("answer--visible");
 });
 
 showAnswerButton2.addEventListener("click", () => {
-  if (showAnswerButton2.textContent == "Show Answer") {
-    showAnswerButton2.textContent = "Hide Answer";
-    answer2.style.display = "block";
-  } else {
-    showAnswerButton2.textContent = "Show Answer";
-    answer2.style.display = "none";
-  }
+  showAnswerButton(showAnswerButton2, answer2);
 });
 
 showAnswerButton3.addEventListener("click", () => {
-  if (showAnswerButton3.textContent == "Show Answer") {
-    showAnswerButton3.textContent = "Hide Answer";
-    answer3.style.display = "block";
-  } else {
-    showAnswerButton3.textContent = "Show Answer";
-    answer3.style.display = "none";
-  }
+  showAnswerButton(showAnswerButton3, answer3);
+});
+
+//bookmark button
+bookmarkButton1.addEventListener("click", () => {
+  bookmarkButton1.classList.toggle("card__bookmark--color");
+});
+bookmarkButton2.addEventListener("click", () => {
+  bookmarkButton2.classList.toggle("card__bookmark--color");
+});
+bookmarkButton3.addEventListener("click", () => {
+  bookmarkButton3.classList.toggle("card__bookmark--color");
 });
