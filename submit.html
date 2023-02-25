@@ -17,46 +17,42 @@
       <form data-js="form">
         <fieldset>
           <legend>Creat a new card now</legend>
-          <label for="question"
-            >Your question:
-            <textarea
-              class="textarea"
-              name="question"
-              id="question"
-              rows="10"
-              cols="40"
-              maxlength="150"
-            ></textarea>
-          </label>
+          <label for="question">Your question: </label>
+          <textarea
+            class="textarea"
+            name="question"
+            id="question"
+            rows="6"
+            cols="30"
+            maxlength="150"
+          ></textarea>
+
           <p data-js="question-length" class="invisible">d</p>
 
-          <label for="answer"
-            >Your answer:
-            <textarea
-              class="textarea"
-              name="answer"
-              id="answer"
-              rows="8"
-              cols="40"
-              maxlength="150"
-            ></textarea>
-          </label>
+          <label for="answer">Your answer: </label>
+          <textarea
+            class="textarea"
+            name="answer"
+            id="answer"
+            rows="6"
+            cols="30"
+            maxlength="150"
+          ></textarea>
+
           <p data-js="answer-length" class="invisible">d</p>
 
-          <label for="tag"
-            >Tag:
-            <textarea
-              class="textarea"
-              name="tag"
-              rows="2"
-              cols="40"
-              id="tag"
-              maxlength="150"
-            ></textarea>
-          </label>
+          <label for="tag">Tag: </label>
+          <textarea
+            class="textarea"
+            name="tag"
+            rows="2"
+            cols="30"
+            id="tag"
+            maxlength="150"
+          ></textarea>
         </fieldset>
 
-        <button style="submit">Submit</button>
+        <button type="submit">Submit</button>
       </form>
       <ul data-js="new-cards"></ul>
     </main>

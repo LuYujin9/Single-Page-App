@@ -30,18 +30,32 @@ form.addEventListener("submit", (event) => {
   const data = Object.fromEntries(formData);
   console.log(data);
 
-  const cards = document.createElement("li");
-  //const question = document.createElement("h2");
-  const answer = document.createElement("p");
-  //const tag = document.createElement("p");
+  const newCard = document.createElement("li");
+  newCard.setAttribute("list-style", "none");
 
-  cards.setAttribute("class", "card");
   //question.textContent = `${data.question}`;
-  answer.textContent = `${data.question} ${data.answer} # ${data.tag} `;
+  newCards.innerHTML = `<article class="card">
+        <h2>${data.question} </h2>
+        <button class="card__bookmark" aria-label="bookmark" data-js="button-1">
+          📁
+        </button>
+        <button
+          type="button"
+          class="card__button"
+          aria-label="show answer button"
+          data-js="show-answer1"
+        >
+          Show Answer
+        </button>
+        <p class="answer--visible" data-js="answer1">${data.answer}</p>
+        <ul class="card__categories">
+          <li># ${data.tag}</li>
+        </ul>
+      </article>`;
+
   //tag.textContent = `#${data.tag}`;
 
-  cards.append(answer);
-  newCards.append(cards);
+  newCards.append(newCard);
 
   event.target.reset();
   event.target.elements.question.focus();

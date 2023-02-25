@@ -1,5 +1,11 @@
 @import "/global.css";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 header {
   width: 100%;
   position: fixed;
