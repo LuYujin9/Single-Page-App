@@ -2,6 +2,7 @@
 @import "/components/Basic/Basic.css";
 @import "/components/Card/Card.css";
 
+/* for link functions  */
 .page {
   display: none;
 }
@@ -25,9 +26,12 @@ body {
   } */
 
 /*   submit */
+#submit {
+}
 
 fieldset {
   width: 80%;
+  height: 500px;
   margin: auto;
   border-radius: 5%;
   display: flex;

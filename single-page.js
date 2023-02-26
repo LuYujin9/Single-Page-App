@@ -1,6 +1,8 @@
+import { showAnswer } from "./components/Card/Card.js";
+
 const allPages = document.querySelectorAll('[data-js*="page"]');
 const allLinks = document.querySelectorAll('[data-js*="link"]');
-
+console.clear();
 //links to pages
 allLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
@@ -10,3 +12,5 @@ allLinks.forEach((link) => {
     currentPage.classList.add("current");
   });
 });
+
+//showAnswer();

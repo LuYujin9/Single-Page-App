@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/single-page.css" />
-    <script src="/single-page.js" defer></script>
+    <script src="/single-page.js" type="module" defer></script>
     <title>APP</title>
   </head>
   <body>
@@ -14,7 +14,7 @@
     </header>
 
     <main>
-      <section class="page" data-js="page-home">
+      <section class="page" id="home" data-js="page-home">
         <article class="card">
           <h2>What property filps the axes in flexbox?</h2>
           <button
@@ -28,11 +28,11 @@
             type="button"
             class="card__button"
             aria-label="show answer button"
-            data-js="show-answer1"
+            data-js="show-answer-btn1"
           >
             Show Answer
           </button>
-          <p class="answer--visible" data-js="answer1">flex-direction</p>
+          <p class="answer--visible">flex-direction</p>
           <ul class="card__categories">
             <li>#html</li>
             <li>#flexbox</li>
@@ -53,11 +53,11 @@
             type="button"
             class="card__button"
             aria-label="show answer button"
-            data-js="show-answer2"
+            data-js="show-answer-btn2"
           >
             Show Answer
           </button>
-          <p class="answer--visible" data-js="answer2">flex-direction</p>
+          <p class="answer--visible">flex-direction</p>
           <ul class="card__categories">
             <li>#html</li>
             <li>#flexbox</li>
@@ -77,11 +77,11 @@
           <button
             class="card__button"
             aria-label="show answer button"
-            data-js="show-answer3"
+            data-js="show-answer-btn3"
           >
             Show Answer
           </button>
-          <p class="answer--visible" data-js="answer3">flex-direction</p>
+          <p class="answer--visible">flex-direction</p>
           <ul class="card__categories">
             <li>#html</li>
             <li>#flexbox</li>
@@ -89,50 +89,8 @@
           </ul>
         </article>
       </section>
-      <section class="page" data-js="page-bookmark">
-        <article class="card" data-js="card1">
-          <h2>What property filps the axes in flexbox?</h2>
-          <button class="card__bookmark" aria-label="bookmark">📁</button>
-          <button class="card__button" aria-label="show answer button">
-            Show Answer
-          </button>
-          <p>flex-direction</p>
-          <ul class="card__categories">
-            <li>#html</li>
-            <li>#flexbox</li>
-            <li>#css</li>
-          </ul>
-        </article>
-
-        <article class="card" data-js="card2">
-          <h2>What property filps the axes in flexbox?</h2>
-          <button class="card__bookmark" aria-label="bookmark">📁</button>
-          <button class="card__button" aria-label="show answer button">
-            Show Answer
-          </button>
-          <p>flex-direction</p>
-          <ul class="card__categories">
-            <li>#html</li>
-            <li>#flexbox</li>
-            <li>#css</li>
-          </ul>
-        </article>
-
-        <article class="card" data-js="card3">
-          <h2>What property filps the axes in flexbox?</h2>
-          <button class="card__bookmark" aria-label="bookmark">📁</button>
-          <button class="card__button" aria-label="show answer button">
-            Show Answer
-          </button>
-          <p>flex-direction</p>
-          <ul class="card__categories">
-            <li>#html</li>
-            <li>#flexbox</li>
-            <li>#css</li>
-          </ul>
-        </article>
-      </section>
-      <section class="page current" data-js="page-submit">
+      <section class="page" id="bookmark" data-js="page-bookmark"></section>
+      <section class="page current" id="submit" data-js="page-submit">
         <form data-js="form">
           <fieldset>
             <legend>Creat a new card now</legend>
@@ -178,12 +136,12 @@
         </form>
         <ul data-js="new-cards"></ul>
       </section>
-      <section class="page" data-js="page-profile">
-        <article class="block__profile">
+      <section class="page" id="profile" data-js="page-profile">
+        <article class="profile__title">
           <img src="/imges/01.png" atl="photo from me" />
           <p>lenealgu dleia</p>
         </article>
-        <article class="text__about-me">
+        <article class="profile__about-me">
           <h2>About Me</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
@@ -191,7 +149,7 @@
             sint ipsam neque earum labore voluptatum quam corrupti numquam sed
             nulla accusamus?
           </p>
-          <section class="box__count">
+          <section class="profile__count-btn">
             <box>⁉️ 13</box>
             <box>📁12</box>
           </section>
@@ -199,7 +157,7 @@
 
         <article>
           <h2>Setting</h2>
-          <section class="block__setting">
+          <section class="profile__setting">
             <p>Dark Mode</p>
             <form>
               <label for="switch">on</label>
