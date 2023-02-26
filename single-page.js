@@ -13,4 +13,4 @@ allLinks.forEach((link) => {
   });
 });
 
-//showAnswer();
+showAnswer();
