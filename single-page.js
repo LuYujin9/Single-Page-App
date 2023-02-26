@@ -55,14 +55,9 @@ form.addEventListener("submit", (event) => {
   bookmarkBtn.setAttribute("data-js", "botton");
   bookmarkBtn.textContent = "📁";
   const hideBtn = document.createElement("button");
-  hideBtn.innerHTML = `<button
-  type="button"
-  class="card__button"
-  aria-label="show answer button"
-  data-js="show-answer-btn"
-  >
-  Hide Answer
-  </button>`;
+  hideBtn.classList.add("card__button");
+  hideBtn.setAttribute("data-js", "show-answer-btn", "type", "button");
+  hideBtn.textContent = "Hide Answer";
 
   const answer = document.createElement("p");
   answer.textContent = `${data.answer}`;
@@ -103,6 +98,16 @@ form.addEventListener("submit", (event) => {
 
   bookmarkBtn.addEventListener("click", () => {
     bookmarkBtn.classList.toggle("card__bookmark--color");
+  });
+
+  hideBtn.addEventListener("click", (event) => {
+    const currentAnswer = hideBtn.nextSibling;
+    if (currentAnswer.classList.contains("block--invisible")) {
+      hideBtn.textContent = "Hide Answer";
+    } else {
+      hideBtn.textContent = "Show Answer";
+    }
+    currentAnswer.classList.toggle("block--invisible");
   });
 
   pageHome.append(newCard);
