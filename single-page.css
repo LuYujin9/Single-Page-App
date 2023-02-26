@@ -1,6 +1,7 @@
 @import "/global.css";
 @import "/components/Basic/Basic.css";
 @import "/components/Card/Card.css";
+@import "/components/Submit/Submit.css";
 
 /* for link functions  */
 .page {
@@ -11,83 +12,14 @@
   display: block;
 }
 
-body {
-  padding: 0px;
-  margin: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--fifth-color);
-}
-
 /* bookmark */
-/*   .card {
-    visibility: hidden;
-  } */
-
-/*   submit */
-#submit {
-}
-
-fieldset {
-  width: 80%;
-  height: 500px;
-  margin: auto;
-  border-radius: 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--first-color);
-  box-shadow: 10px 10px 20px var(--fourth-color);
-}
-
-fieldset > p {
-  text-align: right;
-}
-
-fieldset > legend {
-  padding: 5px 20px;
-  margin: auto;
-  border-radius: 0.5em;
-  background-color: var(--fourth-color);
-  box-shadow: 0.2em 0.2em 0.2em var(--fifth-color);
-  font-size: 1.5em;
-}
-
-fieldset > label {
-  height: 2em;
-  font-size: 1em;
-}
-
-fieldset > textarea {
-  background-color: aqua;
-  border-radius: 0.5em;
-  background-color: var(--second-color);
-}
-
-#submit-button {
-  width: 150px;
-  height: 30px;
-  border-radius: 8px;
-  border: none;
-  box-shadow: 0.5em 0.5em 0.5em var(--fifth-color);
-  padding: 0px 20px;
-  background-color: var(--fourth-color);
-  display: block;
-  margin: 10px auto;
-}
+/* for functions */
 
 li {
   list-style: none;
 }
 
-.invisible {
-  visibility: hidden;
-}
-
 /* profile */
-#profile {
-}
 
 .profile__title {
   display: flex;
@@ -130,7 +62,7 @@ li {
 @media (max-width: 768px) {
   #submit {
     width: 80%;
-    margin: auto;
+    margin: 120px auto;
   }
   #profile {
     margin: 100px auto;
@@ -141,7 +73,7 @@ li {
 @media (min-width: 768px) {
   #submit {
     width: 600px;
-    margin: auto;
+    margin: 129px auto;
   }
   #profile {
     margin: 100px auto;
@@ -149,7 +81,7 @@ li {
   }
 }
 
-.answer--visible {
+.block--invisible {
   visibility: hidden;
 }
 

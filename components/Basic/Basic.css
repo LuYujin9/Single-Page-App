@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--fifth-color);
+}
+
 header {
   width: 100%;
   position: fixed;

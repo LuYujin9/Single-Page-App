@@ -20,7 +20,7 @@
           <button
             class="card__bookmark"
             aria-label="bookmark"
-            data-js="button-1"
+            data-js="bookmark-button"
           >
             📁
           </button>
@@ -32,7 +32,7 @@
           >
             Show Answer
           </button>
-          <p class="answer--visible">flex-direction</p>
+          <p class="block--invisible">flex-direction</p>
           <ul class="card__categories">
             <li>#html</li>
             <li>#flexbox</li>
@@ -45,7 +45,7 @@
           <button
             class="card__bookmark card__bookmark--visible"
             aria-label="bookmark"
-            data-js="button-2"
+            data-js="bookmark-button"
           >
             📁
           </button>
@@ -53,11 +53,11 @@
             type="button"
             class="card__button"
             aria-label="show answer button"
-            data-js="show-answer-btn2"
+            data-js="show-answer-btn"
           >
             Show Answer
           </button>
-          <p class="answer--visible">flex-direction</p>
+          <p class="block--invisible">flex-direction</p>
           <ul class="card__categories">
             <li>#html</li>
             <li>#flexbox</li>
@@ -70,18 +70,18 @@
           <button
             class="card__bookmark"
             aria-label="bookmark"
-            data-js="button-3"
+            data-js="bookmark-button"
           >
             📁
           </button>
           <button
             class="card__button"
             aria-label="show answer button"
-            data-js="show-answer-btn3"
+            data-js="show-answer-btn"
           >
             Show Answer
           </button>
-          <p class="answer--visible">flex-direction</p>
+          <p class="block--invisible">flex-direction</p>
           <ul class="card__categories">
             <li>#html</li>
             <li>#flexbox</li>
@@ -94,47 +94,41 @@
         <form data-js="form">
           <fieldset>
             <legend>Creat a new card now</legend>
-            <label for="question"
-              >Your question:
-              <textarea
-                class="textarea"
-                name="question"
-                id="question"
-                rows="10"
-                cols="40"
-                maxlength="150"
-              ></textarea>
-            </label>
-            <p data-js="question-length" class="invisible">d</p>
+            <label for="question">Your question: </label>
+            <textarea
+              class="textarea"
+              name="question"
+              id="question"
+              rows="10"
+              cols="40"
+              maxlength="150"
+            ></textarea>
 
-            <label for="answer"
-              >Your answer:
-              <textarea
-                class="textarea"
-                name="answer"
-                id="answer"
-                rows="8"
-                cols="40"
-                maxlength="150"
-              ></textarea>
-            </label>
-            <p data-js="answer-length" class="invisible">d</p>
+            <p data-js="question-length" class="block--invisible">d</p>
 
-            <label for="tag"
-              >Tag:
-              <textarea
-                class="textarea"
-                name="tag"
-                rows="2"
-                cols="40"
-                id="tag"
-                maxlength="150"
-              ></textarea>
-            </label>
+            <label for="answer">Your answer: </label>
+            <textarea
+              class="textarea"
+              name="answer"
+              id="answer"
+              rows="8"
+              cols="40"
+              maxlength="150"
+            ></textarea>
+            <p data-js="answer-length" class="block--invisible">d</p>
+
+            <label for="tag">Tag: </label>
+            <textarea
+              class="textarea"
+              name="tag"
+              rows="2"
+              cols="40"
+              id="tag"
+              maxlength="150"
+            ></textarea>
           </fieldset>
           <button id="submit-button" type="submit">Submit</button>
         </form>
-        <ul data-js="new-cards"></ul>
       </section>
       <section class="page" id="profile" data-js="page-profile">
         <article class="profile__title">
