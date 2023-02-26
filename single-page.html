@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/single-page.css" />
+    <script src="/single-page.js" defer></script>
+    <title>APP</title>
+  </head>
+  <body>
+    <header>
+      <h1 aria-labelledby="quiz app">Quiz App</h1>
+    </header>
+
+    <main>
+      <section class="page" data-js="page-home">
+        <article class="card">
+          <h2>What property filps the axes in flexbox?</h2>
+          <button
+            class="card__bookmark"
+            aria-label="bookmark"
+            data-js="button-1"
+          >
+            📁
+          </button>
+          <button
+            type="button"
+            class="card__button"
+            aria-label="show answer button"
+            data-js="show-answer1"
+          >
+            Show Answer
+          </button>
+          <p class="answer--visible" data-js="answer1">flex-direction</p>
+          <ul class="card__categories">
+            <li>#html</li>
+            <li>#flexbox</li>
+            <li>#css</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>What property filps the axes in flexbox?</h2>
+          <button
+            class="card__bookmark card__bookmark--visible"
+            aria-label="bookmark"
+            data-js="button-2"
+          >
+            📁
+          </button>
+          <button
+            type="button"
+            class="card__button"
+            aria-label="show answer button"
+            data-js="show-answer2"
+          >
+            Show Answer
+          </button>
+          <p class="answer--visible" data-js="answer2">flex-direction</p>
+          <ul class="card__categories">
+            <li>#html</li>
+            <li>#flexbox</li>
+            <li>#css</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>What property filps the axes in flexbox?</h2>
+          <button
+            class="card__bookmark"
+            aria-label="bookmark"
+            data-js="button-3"
+          >
+            📁
+          </button>
+          <button
+            class="card__button"
+            aria-label="show answer button"
+            data-js="show-answer3"
+          >
+            Show Answer
+          </button>
+          <p class="answer--visible" data-js="answer3">flex-direction</p>
+          <ul class="card__categories">
+            <li>#html</li>
+            <li>#flexbox</li>
+            <li>#css</li>
+          </ul>
+        </article>
+      </section>
+      <section class="page" data-js="page-bookmark">
+        <article class="card" data-js="card1">
+          <h2>What property filps the axes in flexbox?</h2>
+          <button class="card__bookmark" aria-label="bookmark">📁</button>
+          <button class="card__button" aria-label="show answer button">
+            Show Answer
+          </button>
+          <p>flex-direction</p>
+          <ul class="card__categories">
+            <li>#html</li>
+            <li>#flexbox</li>
+            <li>#css</li>
+          </ul>
+        </article>
+
+        <article class="card" data-js="card2">
+          <h2>What property filps the axes in flexbox?</h2>
+          <button class="card__bookmark" aria-label="bookmark">📁</button>
+          <button class="card__button" aria-label="show answer button">
+            Show Answer
+          </button>
+          <p>flex-direction</p>
+          <ul class="card__categories">
+            <li>#html</li>
+            <li>#flexbox</li>
+            <li>#css</li>
+          </ul>
+        </article>
+
+        <article class="card" data-js="card3">
+          <h2>What property filps the axes in flexbox?</h2>
+          <button class="card__bookmark" aria-label="bookmark">📁</button>
+          <button class="card__button" aria-label="show answer button">
+            Show Answer
+          </button>
+          <p>flex-direction</p>
+          <ul class="card__categories">
+            <li>#html</li>
+            <li>#flexbox</li>
+            <li>#css</li>
+          </ul>
+        </article>
+      </section>
+      <section class="page current" data-js="page-submit">
+        <form data-js="form">
+          <fieldset>
+            <legend>Creat a new card now</legend>
+            <label for="question"
+              >Your question:
+              <textarea
+                class="textarea"
+                name="question"
+                id="question"
+                rows="10"
+                cols="40"
+                maxlength="150"
+              ></textarea>
+            </label>
+            <p data-js="question-length" class="invisible">d</p>
+
+            <label for="answer"
+              >Your answer:
+              <textarea
+                class="textarea"
+                name="answer"
+                id="answer"
+                rows="8"
+                cols="40"
+                maxlength="150"
+              ></textarea>
+            </label>
+            <p data-js="answer-length" class="invisible">d</p>
+
+            <label for="tag"
+              >Tag:
+              <textarea
+                class="textarea"
+                name="tag"
+                rows="2"
+                cols="40"
+                id="tag"
+                maxlength="150"
+              ></textarea>
+            </label>
+          </fieldset>
+          <button id="submit-button" type="submit">Submit</button>
+        </form>
+        <ul data-js="new-cards"></ul>
+      </section>
+      <section class="page" data-js="page-profile">
+        <article class="block__profile">
+          <img src="/imges/01.png" atl="photo from me" />
+          <p>lenealgu dleia</p>
+        </article>
+        <article class="text__about-me">
+          <h2>About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+            ducimus ex est blanditiis animi beatae dolores doloremque doloribus
+            sint ipsam neque earum labore voluptatum quam corrupti numquam sed
+            nulla accusamus?
+          </p>
+          <section class="box__count">
+            <box>⁉️ 13</box>
+            <box>📁12</box>
+          </section>
+        </article>
+
+        <article>
+          <h2>Setting</h2>
+          <section class="block__setting">
+            <p>Dark Mode</p>
+            <form>
+              <label for="switch">on</label>
+              <input type="checkbox" aria-label="switch" id="switch" />
+            </form>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a
+            class="center"
+            data-js="link-home"
+            href="#home"
+            aria-label="homepage"
+            >🏠</a
+          >
+        </li>
+        <li>
+          <a
+            class="center"
+            data-js="link-bookmark"
+            href="#bookmark"
+            aria-label="bookmark"
+            >📁</a
+          >
+        </li>
+        <li>
+          <a
+            class="center"
+            data-js="link-submit"
+            href="#submit"
+            aria-label="bookmark"
+            >➕</a
+          >
+        </li>
+        <li>
+          <a
+            class="center"
+            data-js="link-profile"
+            href="#profile"
+            aria-label="profile"
+            >👩🏻‍💼</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
