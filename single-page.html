@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/single-page.css" />
+    <script src="/single-page.js" type="module" defer></script>
+    <title>APP</title>
+  </head>
+  <body>
+    <header>
+      <h1 aria-labelledby="quiz app">Quiz App</h1>
+    </header>
+
+    <main>
+      <section class="page" id="home" data-js="page-home">
+        <article class="card">
+          <h2>What property filps the axes in flexbox?</h2>
+          <button
+            class="card__bookmark"
+            aria-label="bookmark"
+            data-js="bookmark-button"
+          >
+            📁
+          </button>
+          <button
+            type="button"
+            class="card__button"
+            aria-label="show answer button"
+            data-js="show-answer-btn"
+          >
+            Show Answer
+          </button>
+          <p class="block--invisible">flex-direction</p>
+          <ul class="card__categories">
+            <li>#html</li>
+            <li>#flexbox</li>
+            <li>#css</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>What property filps the axes in flexbox?</h2>
+          <button
+            class="card__bookmark card__bookmark--visible"
+            aria-label="bookmark"
+            data-js="bookmark-button"
+          >
+            📁
+          </button>
+          <button
+            type="button"
+            class="card__button"
+            aria-label="show answer button"
+            data-js="show-answer-btn"
+          >
+            Show Answer
+          </button>
+          <p class="block--invisible">flex-direction</p>
+          <ul class="card__categories">
+            <li>#html</li>
+            <li>#flexbox</li>
+            <li>#css</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>What property filps the axes in flexbox?</h2>
+          <button
+            class="card__bookmark"
+            aria-label="bookmark"
+            data-js="bookmark-button"
+          >
+            📁
+          </button>
+          <button
+            class="card__button"
+            aria-label="show answer button"
+            data-js="show-answer-btn"
+          >
+            Show Answer
+          </button>
+          <p class="block--invisible">flex-direction</p>
+          <ul class="card__categories">
+            <li>#html</li>
+            <li>#flexbox</li>
+            <li>#css</li>
+          </ul>
+        </article>
+      </section>
+      <section class="page" id="bookmark" data-js="page-bookmark"></section>
+      <section class="page current" id="submit" data-js="page-submit">
+        <form data-js="form">
+          <fieldset>
+            <legend>Creat a new card now</legend>
+            <label for="question">Your question: </label>
+            <textarea
+              class="textarea"
+              name="question"
+              id="question"
+              rows="10"
+              cols="40"
+              maxlength="150"
+            ></textarea>
+
+            <p data-js="question-length" class="block--invisible">d</p>
+
+            <label for="answer">Your answer: </label>
+            <textarea
+              class="textarea"
+              name="answer"
+              id="answer"
+              rows="8"
+              cols="40"
+              maxlength="150"
+            ></textarea>
+            <p data-js="answer-length" class="block--invisible">d</p>
+
+            <label for="tag">Tag: </label>
+            <textarea
+              class="textarea"
+              name="tag"
+              rows="2"
+              cols="40"
+              id="tag"
+              maxlength="150"
+            ></textarea>
+          </fieldset>
+          <button id="submit-button" type="submit">Submit</button>
+        </form>
+      </section>
+      <section class="page" id="profile" data-js="page-profile">
+        <article class="profile__title">
+          <img src="/imges/01.png" atl="photo from me" />
+          <p>lenealgu dleia</p>
+        </article>
+        <article class="profile__about-me">
+          <h2>About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+            ducimus ex est blanditiis animi beatae dolores doloremque doloribus
+            sint ipsam neque earum labore voluptatum quam corrupti numquam sed
+            nulla accusamus?
+          </p>
+          <section class="profile__count-btn">
+            <box>⁉️ 13</box>
+            <box>📁12</box>
+          </section>
+        </article>
+
+        <article>
+          <h2>Setting</h2>
+          <section class="profile__setting">
+            <p>Dark Mode</p>
+            <form>
+              <label for="switch">on</label>
+              <input type="checkbox" aria-label="switch" id="switch" />
+            </form>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a
+            class="center"
+            data-js="link-home"
+            href="#home"
+            aria-label="homepage"
+            >🏠</a
+          >
+        </li>
+        <li>
+          <a
+            class="center"
+            data-js="link-bookmark"
+            href="#bookmark"
+            aria-label="bookmark"
+            >📁</a
+          >
+        </li>
+        <li>
+          <a
+            class="center"
+            data-js="link-submit"
+            href="#submit"
+            aria-label="bookmark"
+            >➕</a
+          >
+        </li>
+        <li>
+          <a
+            class="center"
+            data-js="link-profile"
+            href="#profile"
+            aria-label="profile"
+            >👩🏻‍💼</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

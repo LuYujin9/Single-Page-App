@@ -1,15 +1,4 @@
-@import "/global.css";
-@import "/components/Basic/Basic.css";
-@import "/components/Card/Card.css";
-
-body {
-  margin: 0px;
-  background-color: var(--fifth-color);
-}
-
-main {
-  margin: 120px 0px;
-}
+/*   submit */
 
 fieldset {
   width: 80%;
@@ -40,13 +29,12 @@ fieldset > label {
   font-size: 1em;
 }
 
-fieldset > textarea {
-  background-color: aqua;
+fieldset textarea {
   border-radius: 0.5em;
   background-color: var(--second-color);
 }
 
-button {
+#submit-button {
   width: 150px;
   height: 30px;
   border-radius: 8px;
@@ -56,26 +44,4 @@ button {
   background-color: var(--fourth-color);
   display: block;
   margin: 10px auto;
-}
-
-li {
-  list-style: none;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-@media (max-width: 768px) {
-  form {
-    width: 80%;
-    margin: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  form {
-    width: 600px;
-    margin: auto;
-  }
 }
